@@ -78,7 +78,7 @@ section[id] { scroll-margin-top: 76px; }
 .btn:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--marigold-deep); }
 .btn[disabled] { background: #EFE3D1; color: #7D6A58; box-shadow: 0 5px 0 #DCCDB7; cursor: progress; transform: none; filter: none; }
 .btn--block { width: 100%; }
-.btn--sm { min-height: 44px; padding: 0 16px; white-space: nowrap; font-size: 16px; border-radius: 14px; box-shadow: 0 4px 0 var(--marigold-deep); }
+.btn--sm { min-height: 44px; padding: 0 16px; white-space: nowrap; gap: 0; font-size: 16px; border-radius: 14px; box-shadow: 0 4px 0 var(--marigold-deep); }
 .btn--green { background: var(--tulsi); color: #fff; box-shadow: 0 5px 0 var(--tulsi-deep); }
 .btn--green:hover { color: #fff; }
 .btn--green:active { box-shadow: 0 1px 0 var(--tulsi-deep); }
@@ -96,14 +96,10 @@ section[id] { scroll-margin-top: 76px; }
 .brand { display: flex; align-items: center; gap: 8px; flex-grow: 1; color: var(--ink); text-decoration: none; }
 .brand:hover { color: var(--ink); }
 .brand span { font-family: var(--f-head); font-weight: 800; font-size: 22px; white-space: nowrap; }
-@media (max-width: 440px) { .hdr { gap: 8px; } .brand { gap: 6px; min-width: 0; } .brand span { font-size: 19px; overflow: hidden; text-overflow: ellipsis; } .langsel { padding: 0 4px; font-size: 13px; max-width: 108px; } .btn--sm { padding: 0 12px; } }
+@media (max-width: 440px) { .hdr { gap: 8px; } .brand { gap: 6px; min-width: 0; } .brand span { font-size: 19px; overflow: hidden; text-overflow: ellipsis; } .btn--sm { padding: 0 12px; } }
 .nav { display: none; gap: 14px; align-items: center; margin-right: 8px; }
 .navlink { font-weight: 800; font-size: 15px; color: var(--ink); text-decoration: none; padding: 10px 4px; white-space: nowrap; }
 .navlink:hover { color: var(--rust); }
-.langsel {
-  height: 44px; border-radius: 14px; border: 2px solid var(--line); background: #fff;
-  padding: 0 10px; font-family: var(--f-body); font-weight: 800; font-size: 14px; color: var(--ink); cursor: pointer;
-}
 .hide-s { display: none; }
 
 /* ---------- hero ---------- */
@@ -305,8 +301,6 @@ fieldset { border: none; margin: 0; padding: 0; min-width: 0; }
 }
 
 
-/* ---------- header language label ---------- */
-.langlbl { font-weight: 800; font-size: 14px; color: var(--ink-mute); white-space: nowrap; }
 
 /* ---------- hero pricing note ---------- */
 .cta-note { margin: 0; display: flex; gap: 8px; align-items: flex-start; font-size: 15px; line-height: 1.45; color: var(--ink-soft); }
@@ -378,8 +372,7 @@ fieldset { border: none; margin: 0; padding: 0; min-width: 0; }
   .phones { justify-content: center; overflow: visible; margin: 0; padding: 6px 0 18px; gap: 36px; }
   .preview-note { text-align: center; }
 }
-@media (max-width: 699px) { .langlbl .hide-s { display: none; } }
-@media (min-width: 1100px) and (max-width: 1299px) { .langlbl .hide-s { display: none; } .nav { gap: 10px; } }
+@media (min-width: 1100px) and (max-width: 1299px) { .nav { gap: 10px; } }
 
 /* ---------- tablet ≥700 ---------- */
 @media (min-width: 700px) {

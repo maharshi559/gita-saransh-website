@@ -6,7 +6,7 @@ Static site built from the "Gita Saransh Website" design canvas. No build step: 
 index.html          the page (header, hero, how it works, Ask Krishna, courtyard, sign-up, FAQ, footer)
 privacy.html        waitlist privacy notice
 styles.css          design tokens, layout (breakpoints 700px and 1100px), animations
-app.js              language picker, Ask Krishna age tabs, FAQ, sign-up form
+app.js              greeting, Ask Krishna age tabs, FAQ, sign-up form, app preview video
 config.js           Supabase URL + anon key  <- fill in once
 settings.js         loads editable text from the site_settings table
 assets/krishna/     Krishna in 6 ages (animated SVG, from the canvas)
@@ -76,12 +76,12 @@ Nothing here is secret: the Supabase anon key in `config.js` is meant to be publ
 ## Page notes
 
 - **Inside the app** section: three phone previews built in HTML/CSS (Recite, Chapter path, growth moment). The growth phone plays `assets/app/growth-1.webm` (mp4 fallback) only while visible, and shows a still for people who prefer reduced motion. When real app screenshots exist, you can swap a phone's screen for an `<img>`.
-- **Language picker** in the header says "Learn in": it sets the greeting and the form's language. The site text itself is English for now.
+- **Language**: there is no site language switcher (the site is English). The hero greeting and the form's "Which language will you learn in?" field are preset from the visitor's browser language.
 - **Footer Contact link** appears once `contact_email` is set in `site_settings` (it stays hidden rather than pointing nowhere).
 - **SEO**: `index.html` has Open Graph / Twitter tags with absolute URLs and a schema.org `MobileApplication` block. Update the URLs there if you move to a custom domain.
 
 ## Notes
 
-- Language picker changes the "Namaste" greeting and presets the form's language; the choice is remembered in the browser. The site copy itself is English only for now (Hindi/Telugu copy is still open).
+- The site copy is English only for now (Hindi/Telugu copy is still open).
 - Animations respect "reduce motion". The FAQ uses native `<details>`, so it works without JavaScript.
 - Spam: the form has a hidden honeypot field. If bots become a problem, add Cloudflare Turnstile.
