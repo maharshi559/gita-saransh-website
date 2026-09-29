@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><title>peacock</title><style>@keyframes b{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes br{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,.985)}}@keyframes bl{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}@keyframes tw{0%,100%{opacity:.25;transform:scale(.6) rotate(0deg)}50%{opacity:1;transform:scale(1) rotate(20deg)}}@keyframes wv{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-16deg)}}@keyframes rk{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}@keyframes sw{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}@keyframes nt{0%{opacity:0;transform:translate(0,6px)}30%{opacity:1}100%{opacity:0;transform:translate(8px,-18px)}}@keyframes fl{0%,100%{transform:scale(1,1) rotate(0deg)}30%{transform:scale(.94,1.06) rotate(-3deg)}60%{transform:scale(1.04,.95) rotate(2deg)}}.a-bob{animation:b 3.4s ease-in-out infinite}.a-breathe{animation:br 4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-blink{animation:bl 4.2s infinite;transform-box:fill-box;transform-origin:center}.a-twinkle{animation:tw 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.a-wave{animation:wv 1s ease-in-out infinite}.a-rock{animation:rk 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-sway{animation:sw 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-note{animation:nt 1.8s ease-out infinite}.a-flicker{animation:fl .9s ease-in-out infinite}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<path d="M50 70 C10 64 2 26 20 10 C36 26 50 20 50 20 C50 20 64 26 80 10 C98 26 90 64 50 70 Z" fill="#2FA35A" stroke="#1F7A3F" style="stroke-width: 2.5px"></path>
+<circle cx="22" cy="30" r="5" fill="#F2B705"></circle><circle cx="22" cy="30" r="2.5" fill="#1F5FBF"></circle>
+<circle cx="78" cy="30" r="5" fill="#F2B705"></circle><circle cx="78" cy="30" r="2.5" fill="#1F5FBF"></circle>
+<circle cx="32" cy="48" r="5" fill="#F2B705"></circle><circle cx="32" cy="48" r="2.5" fill="#1F5FBF"></circle>
+<circle cx="68" cy="48" r="5" fill="#F2B705"></circle><circle cx="68" cy="48" r="2.5" fill="#1F5FBF"></circle>
+<circle cx="50" cy="34" r="5" fill="#F2B705"></circle><circle cx="50" cy="34" r="2.5" fill="#1F5FBF"></circle>
+<ellipse cx="50" cy="70" rx="11" ry="17" fill="#1F5FBF" stroke="#153F80" style="stroke-width: 2.5px"></ellipse>
+<circle cx="50" cy="50" r="8" fill="#1F5FBF" stroke="#153F80" style="stroke-width: 2.5px"></circle>
+<path d="M50 42 L46 32 M50 42 L50 30 M50 42 L54 32" stroke="#1F5FBF" style="stroke-width: 2px"></path>
+<circle cx="47" cy="49" r="1.8" fill="#FFFFFF"></circle>
+<path d="M56 51 L62 53 L56 55 Z" fill="#E8A800"></path>
+<path d="M46 86 L44 94 M54 86 L56 94" stroke="#C98100" style="stroke-width: 2.5px; stroke-linecap: round"></path>
+</svg>

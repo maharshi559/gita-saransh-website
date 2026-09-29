@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gita Saransh: recite the Gita, watch Krishna grow</title>
+<meta name="description" content="A playful Bhagavad Gita app for the whole family. Recite one shloka at a time in your own language, and watch little Krishna grow up with every chapter. Join the waitlist.">
+<meta name="theme-color" content="#FFE7C4">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gita Saransh: recite the Gita, watch Krishna grow">
+<meta property="og:description" content="Learn the Bhagavad Gita one shloka at a time, in your own language. Every chapter you finish, little Krishna grows.">
+<meta property="og:url" content="https://maharshi559.github.io/gita-saransh-website/">
+<meta property="og:image" content="https://maharshi559.github.io/gita-saransh-website/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@500;600;700;800&family=Tiro+Devanagari+Sanskrit&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="config.js" defer></script>
+<script src="settings.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- header -->
+<header class="site-header">
+  <div class="wrap hdr">
+    <a class="brand" href="#top" aria-label="Gita Saransh home">
+      <svg width="34" height="22" viewBox="0 0 200 120" aria-hidden="true"><path d="M100 100 C70 92 40 72 30 46 C60 46 88 66 100 100 Z" fill="#F9B8CB" stroke="#D9678A" stroke-width="6"/><path d="M100 100 C130 92 160 72 170 46 C140 46 112 66 100 100 Z" fill="#F9B8CB" stroke="#D9678A" stroke-width="6"/><path d="M100 104 C84 82 84 42 100 20 C116 42 116 82 100 104 Z" fill="#F48BAA" stroke="#D9678A" stroke-width="6"/></svg>
+      <span>Gita Saransh</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a class="navlink" href="#how">How it works</a>
+      <a class="navlink" href="#ask">Ask Krishna</a>
+      <a class="navlink" href="#courtyard">Courtyard</a>
+      <a class="navlink" href="#faq">FAQ</a>
+    </nav>
+    <label for="hdr-lang" class="sr-only">Your language</label>
+    <select id="hdr-lang" class="langsel" data-lang-select>
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+      <option value="te">తెలుగు</option>
+      <option value="ta">தமிழ்</option>
+      <option value="kn">ಕನ್ನಡ</option>
+      <option value="mr">मराठी</option>
+      <option value="bn">বাংলা</option>
+      <option value="gu">ગુજરાતી</option>
+    </select>
+    <a class="btn btn--sm" href="#join">Join<span class="hide-s">&nbsp;the waitlist</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- hero -->
+<section id="top" class="hero-sec">
+  <div class="wrap hero">
+    <div class="stack hero-copy a-rise">
+      <div class="sa" lang="sa">॥ श्रीमद्भगवद्गीता ॥</div>
+      <h1 class="h1">Recite the Gita. Watch little Krishna grow up.</h1>
+      <p class="lede">A playful app for the whole family. Learn the Bhagavad Gita one shloka at a time, in your own language. Every chapter you finish, Krishna grows, from a baby on a lotus to Arjuna’s charioteer.</p>
+      <div class="cta-row">
+        <a class="btn" href="#join">Become a founding member</a>
+        <a class="ghost" href="#how">See how it works</a>
+      </div>
+      <div class="pills">
+        <span class="pill">8 Indian languages</span>
+        <span class="pill">18 chapters · 700 shlokas</span>
+        <span class="pill">iPhone &amp; Android · <span data-tpl="{launch_month}">coming soon</span></span>
+      </div>
+    </div>
+    <div class="scene-wrap" aria-hidden="true">
+      <div class="scene">
+        <div class="sun-pulse a-pulse"></div>
+        <div class="sun"></div>
+        <svg class="rays a-spin" width="300" height="300" viewBox="-150 -150 300 300"><g fill="#FFE39A" opacity=".7"><path d="M0 -150 L10 -110 L-10 -110 Z"/><path d="M150 0 L110 10 L110 -10 Z"/><path d="M0 150 L-10 110 L10 110 Z"/><path d="M-150 0 L-110 -10 L-110 10 Z"/><path d="M106 -106 L85 -71 L71 -85 Z"/><path d="M106 106 L71 85 L85 71 Z"/><path d="M-106 106 L-85 71 L-71 85 Z"/><path d="M-106 -106 L-71 -85 L-85 -71 Z"/></g></svg>
+        <div class="cloud a-drift" style="left:6px;top:70px;width:82px"></div>
+        <div class="cloud a-drift" style="left:276px;top:120px;width:66px;height:22px;opacity:.8;animation-delay:-3s"></div>
+        <svg class="a-twinkle" style="left:40px;top:170px" width="20" height="20" viewBox="-12 -12 24 24"><path d="M0 -11 C1.5 -2 2 -1.5 11 0 C2 1.5 1.5 2 0 11 C-1.5 2 -2 1.5 -11 0 C-2 -1.5 -1.5 -2 0 -11 Z" fill="#FFB547"/></svg>
+        <svg class="a-twinkle" style="left:300px;top:40px;animation-delay:-.8s" width="16" height="16" viewBox="-12 -12 24 24"><path d="M0 -11 C1.5 -2 2 -1.5 11 0 C2 1.5 1.5 2 0 11 C-1.5 2 -2 1.5 -11 0 C-2 -1.5 -1.5 -2 0 -11 Z" fill="#FFFFFF"/></svg>
+        <div class="hill1"></div>
+        <div class="hill2"></div>
+        <div class="a-pop" style="left:70px;top:226px;width:220px;height:132px">
+          <svg viewBox="0 0 200 120" width="220" height="132"><ellipse cx="100" cy="108" rx="84" ry="10" fill="#7FBF6A"/><path d="M100 100 C70 92 40 72 30 46 C60 46 88 66 100 100 Z" fill="#F9B8CB" stroke="#D9678A" stroke-width="2.5"/><path d="M100 100 C130 92 160 72 170 46 C140 46 112 66 100 100 Z" fill="#F9B8CB" stroke="#D9678A" stroke-width="2.5"/><path d="M100 100 C80 80 70 42 82 16 C98 36 104 70 100 100 Z" fill="#F7A3BC" stroke="#D9678A" stroke-width="2.5"/><path d="M100 100 C120 80 130 42 118 16 C102 36 96 70 100 100 Z" fill="#F7A3BC" stroke="#D9678A" stroke-width="2.5"/></svg>
+        </div>
+        <div class="a-bob" style="left:95px;top:96px"><img src="assets/krishna/toddler-wave.svg" width="170" height="187" alt=""></div>
+        <div class="hello a-hop" data-hello>Namaste!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- how it works -->
+<section id="how" class="sec">
+  <div class="wrap stack" style="gap:28px">
+    <div class="stack reveal" style="gap:10px;max-width:720px">
+      <span class="eyebrow">How it works</span>
+      <h2 class="h2">Five minutes a day. One shloka at a time.</h2>
+    </div>
+    <div class="steps">
+      <article class="card reveal">
+        <span class="num" aria-hidden="true">1</span>
+        <h3 class="h3">Listen, then recite</h3>
+        <div class="demo demo--shloka sa" lang="sa">
+          <span class="kw">धर्मक्षेत्रे</span> <span class="kw" style="animation-delay:.9s">कुरुक्षेत्रे</span> <span class="kw" style="animation-delay:1.8s">समवेता</span> <span class="kw" style="animation-delay:2.7s">युयुत्सवः</span> ।<br><span class="kw" style="animation-delay:3.6s">मामकाः</span> <span class="kw" style="animation-delay:4.5s">पाण्डवाश्चैव</span> <span class="kw" style="animation-delay:5.4s">किमकुर्वत</span> <span class="kw" style="animation-delay:6.3s">सञ्जय</span> ॥
+        </div>
+        <p class="body">Words light up as the shloka is sung. Say it back, and the meaning appears in your language. No Sanskrit needed to start.</p>
+      </article>
+      <article class="card reveal">
+        <span class="num" aria-hidden="true">2</span>
+        <h3 class="h3">Earn XP</h3>
+        <div class="demo demo--xp">
+          <div class="xp"><svg class="a-twinkle" width="24" height="24" viewBox="-12 -12 24 24" aria-hidden="true"><path d="M0 -11 C1.5 -2 2 -1.5 11 0 C2 1.5 1.5 2 0 11 C-1.5 2 -2 1.5 -11 0 C-2 -1.5 -1.5 -2 0 -11 Z" fill="#D98A1C"/></svg>+10 XP</div>
+          <span class="xp-note">per shloka<br>+50 per chapter</span>
+        </div>
+        <p class="body">Every shloka you recite earns XP. Spend it on gifts for Krishna: butter, a flute, a calf to play with.</p>
+      </article>
+      <article class="card reveal">
+        <span class="num" aria-hidden="true">3</span>
+        <h3 class="h3">Watch him grow</h3>
+        <div class="demo demo--grow" aria-hidden="true">
+          <img src="assets/krishna/newborn.svg" width="62" height="68" alt="" style="margin-bottom:4px">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D98A1C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:30px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <img class="a-bob" src="assets/krishna/toddler-wave.svg" width="96" height="106" alt="" style="margin-bottom:2px">
+        </div>
+        <p class="body">Finish a chapter and Krishna grows up before your eyes, with a little celebration each time.</p>
+      </article>
+    </div>
+
+    <div class="forms-band reveal">
+      <div class="stack" style="gap:4px">
+        <h3 class="h3" style="font-size:25px">18 chapters, six forms of Krishna</h3>
+        <p class="body">And after Chapter 18, a surprise: the Vishwaroopa.</p>
+      </div>
+      <ul class="ages">
+        <li class="age"><img class="a-bob" src="assets/krishna/newborn.svg" width="92" height="101" alt="Baby Krishna on a lotus"><span class="age-name">Shishu</span><span class="age-span">Chapter 1</span></li>
+        <li class="age"><img class="a-bob" style="animation-delay:-.55s" src="assets/krishna/toddler.svg" width="92" height="101" alt="Toddler Krishna"><span class="age-name">Bal</span><span class="age-span">Ch 2–5</span></li>
+        <li class="age"><img class="a-bob" style="animation-delay:-1.1s" src="assets/krishna/boy.svg" width="92" height="101" alt="Young Krishna playing the flute"><span class="age-name">Gopal</span><span class="age-span">Ch 6–9</span></li>
+        <li class="age"><img class="a-bob" style="animation-delay:-1.65s" src="assets/krishna/teen.svg" width="92" height="101" alt="Teenage Krishna lifting Govardhan"><span class="age-name">Kishore</span><span class="age-span">Ch 10–12</span></li>
+        <li class="age"><img class="a-bob" style="animation-delay:-2.2s" src="assets/krishna/youth.svg" width="92" height="101" alt="Krishna as a young prince"><span class="age-name">Yuva</span><span class="age-span">Ch 13–15</span></li>
+        <li class="age"><img class="a-bob" style="animation-delay:-2.75s" src="assets/krishna/adult.svg" width="92" height="101" alt="Krishna as Arjuna’s charioteer with his conch"><span class="age-name">Parthasarathi</span><span class="age-span">Ch 16–18</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ask krishna -->
+<section id="ask" class="sec" style="background:#fff">
+  <div class="wrap split">
+    <div class="first stack reveal" style="gap:14px">
+      <span class="eyebrow">Ask Krishna</span>
+      <h2 class="h2">Ask him anything. He answers at his age.</h2>
+      <p class="lede">Worried about exams? Feeling angry? Krishna gives real advice and quotes the shloka behind it. As a toddler he giggles about butter pots. By Chapter 18 he speaks as he did to Arjuna. The wisdom stays the same.</p>
+      <ul class="ticks">
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4E8F3E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Every answer quotes a real verse, checked, never made up</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4E8F3E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Gentle and safe for children, answered in your language</li>
+      </ul>
+      <span class="hint">Try it: tap an age to hear the same question answered differently.</span>
+    </div>
+    <div class="chat reveal">
+      <div class="agetabs" role="group" aria-label="Krishna’s age" data-ask-tabs>
+        <button class="tab" type="button" aria-pressed="false" data-age="newborn">Shishu</button>
+        <button class="tab" type="button" aria-pressed="true" data-age="toddler">Bal</button>
+        <button class="tab" type="button" aria-pressed="false" data-age="boy">Gopal</button>
+        <button class="tab" type="button" aria-pressed="false" data-age="teen">Kishore</button>
+        <button class="tab" type="button" aria-pressed="false" data-age="youth">Yuva</button>
+        <button class="tab" type="button" aria-pressed="false" data-age="adult">Parthasarathi</button>
+      </div>
+      <div class="q-bubble">I’m scared about my exams</div>
+      <div class="a-row">
+        <div class="avatar"><img src="assets/krishna/toddler.svg" width="46" height="51" alt="" data-ask-avatar></div>
+        <div class="a-bubble" aria-live="polite" data-ask-bubble>
+          <div class="gesture" data-ask-gesture>(giggles and hides a butter pot)</div>
+          <span data-ask-reply>Exams are scary? Like when Yashoda Maa finds my butter pot! Hee hee. But listen: one step, then one step. Study a little bit every day. The marks? Leave them to me. Your job is the trying!</span>
+        </div>
+      </div>
+      <div class="verse">
+        <span class="verse-tag">BG 2.47</span>
+        <div class="sa" lang="sa">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।<br>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥</div>
+        <div class="verse-en">Your right is to your work alone, never to its results.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- courtyard -->
+<section id="courtyard" class="sec">
+  <div class="wrap split rev">
+    <div class="first stack reveal" style="gap:14px">
+      <span class="eyebrow">Krishna’s courtyard</span>
+      <h2 class="h2">Turn your XP into gifts for Krishna.</h2>
+      <p class="lede">Every offering joins his courtyard and his animations: a pot of venna he sneaks a taste of, a calf that follows him, a flute he plays for you.</p>
+      <ul class="items">
+        <li class="item"><img src="assets/items/venna.svg" width="56" height="56" alt=""><span class="item-name">Pot of venna</span><span class="item-xp">50 XP</span></li>
+        <li class="item"><img src="assets/items/flute.svg" width="56" height="56" alt=""><span class="item-name">Bamboo flute</span><span class="item-xp">200 XP</span></li>
+        <li class="item"><img src="assets/items/calf.svg" width="56" height="56" alt=""><span class="item-name">Little calf</span><span class="item-xp">150 XP</span></li>
+        <li class="item"><img src="assets/items/peacock.svg" width="56" height="56" alt=""><span class="item-name">Peacock</span><span class="item-xp">250 XP</span></li>
+        <li class="item"><img src="assets/items/mala.svg" width="56" height="56" alt=""><span class="item-name">Tulsi mala</span><span class="item-xp">120 XP</span></li>
+        <li class="item"><img src="assets/items/diya.svg" width="56" height="56" alt=""><span class="item-name">Little diya</span><span class="item-xp">40 XP</span></li>
+      </ul>
+    </div>
+    <div class="yard reveal" aria-hidden="true">
+      <svg class="yard-garland" viewBox="0 0 390 30" preserveAspectRatio="none"><path d="M0 6 Q98 30 195 8 Q292 30 390 6" stroke="#FF9F1C" fill="none" stroke-width="9" stroke-linecap="round" stroke-dasharray="0.1 12"/><path d="M0 6 Q98 30 195 8 Q292 30 390 6" stroke="#4E8F3E" fill="none" stroke-width="6" stroke-linecap="round" stroke-dasharray="0.1 12" stroke-dashoffset="6"/></svg>
+      <div class="yard-ground"></div>
+      <div class="yard-stage">
+        <div class="a-sway" style="left:-10px;top:6px;transform-origin:50% 0"><img src="assets/items/jhoola.svg" width="84" height="84" alt=""></div>
+        <div class="a-bob" style="left:212px;top:90px;animation-delay:-1s"><img src="assets/items/peacock.svg" width="96" height="96" alt=""></div>
+        <div class="a-bob" style="left:-26px;top:150px"><img src="assets/items/cow.svg" width="112" height="112" alt=""></div>
+        <div class="a-bob" style="left:66px;top:76px"><img src="assets/krishna/boy.svg" width="170" height="187" alt=""></div>
+        <div class="a-wiggle" style="left:214px;top:214px"><img src="assets/items/venna.svg" width="64" height="64" alt=""></div>
+        <div class="a-flicker" style="left:136px;top:34px"><img src="assets/items/diya.svg" width="36" height="36" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- join -->
+<section id="join" class="sec join-sec">
+  <div class="wrap joingrid">
+    <div class="stack" style="gap:14px">
+      <span class="eyebrow">Founding members</span>
+      <h2 class="h2">Be there when Krishna is born on the lotus.</h2>
+      <p class="lede">Join the waitlist and we’ll tell you the moment Gita Saransh launches.</p>
+      <div class="perk">
+        <img class="a-wiggle" src="assets/items/garland.svg" width="58" height="58" alt="" style="flex-shrink:0">
+        <div class="stack" style="gap:2px">
+          <span class="perk-title">Founding member perk</span>
+          <span class="perk-body" data-tpl="{founding_perk} for the first {founding_spots} families who join.">A special launch gift for the first families who join.</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <!-- success state -->
+      <div class="panel joined a-pop" role="status" tabindex="-1" hidden data-joined>
+        <div class="joined-art">
+          <img class="a-bob" src="assets/krishna/toddler-wave.svg" width="130" height="143" alt="">
+          <img src="assets/vyasa/bless.svg" width="120" height="132" alt="">
+        </div>
+        <span class="joined-title" data-joined-title>You’re a founding member!</span>
+        <p>Vyasa has written your name down. We’ll write to <b data-shown-email>you</b> when Gita Saransh launches<span data-shown-wa hidden> and send a WhatsApp message to <span data-shown-wa-num></span></span>.</p>
+        <a class="btn btn--green" href="#" target="_blank" rel="noopener" data-share>Share with family on WhatsApp</a>
+        <button class="ghost" type="button" data-edit>Change my details</button>
+      </div>
+
+      <!-- form -->
+      <form class="panel" novalidate data-form>
+        <div class="fields">
+          <div>
+            <label class="lbl" for="f-email">Email</label>
+            <input id="f-email" name="email" class="inp" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div>
+            <label class="lbl" for="f-wa">WhatsApp <small>(optional)</small></label>
+            <div class="row">
+              <label for="f-cc" class="sr-only">Country code</label>
+              <select id="f-cc" name="cc" class="cc ccsel" autocomplete="tel-country-code">
+                <option value="IN" data-dial="91">+91 India</option>
+                <option value="US" data-dial="1">+1 USA</option>
+                <option value="CA" data-dial="1">+1 Canada</option>
+                <option value="GB" data-dial="44">+44 UK</option>
+                <option value="AU" data-dial="61">+61 Australia</option>
+                <option value="NZ" data-dial="64">+64 New Zealand</option>
+                <option value="AE" data-dial="971">+971 UAE</option>
+                <option value="SA" data-dial="966">+966 Saudi Arabia</option>
+                <option value="QA" data-dial="974">+974 Qatar</option>
+                <option value="KW" data-dial="965">+965 Kuwait</option>
+                <option value="OM" data-dial="968">+968 Oman</option>
+                <option value="BH" data-dial="973">+973 Bahrain</option>
+                <option value="SG" data-dial="65">+65 Singapore</option>
+                <option value="MY" data-dial="60">+60 Malaysia</option>
+                <option value="NP" data-dial="977">+977 Nepal</option>
+                <option value="LK" data-dial="94">+94 Sri Lanka</option>
+                <option value="BD" data-dial="880">+880 Bangladesh</option>
+                <option value="MU" data-dial="230">+230 Mauritius</option>
+                <option value="FJ" data-dial="679">+679 Fiji</option>
+                <option value="ZA" data-dial="27">+27 South Africa</option>
+                <option value="KE" data-dial="254">+254 Kenya</option>
+                <option value="TT" data-dial="1">+1 Trinidad & Tobago</option>
+                <option value="GY" data-dial="592">+592 Guyana</option>
+                <option value="SR" data-dial="597">+597 Suriname</option>
+                <option value="DE" data-dial="49">+49 Germany</option>
+                <option value="NL" data-dial="31">+31 Netherlands</option>
+                <option value="IE" data-dial="353">+353 Ireland</option>
+                <option value="FR" data-dial="33">+33 France</option>
+                <option value="IT" data-dial="39">+39 Italy</option>
+                <option value="HK" data-dial="852">+852 Hong Kong</option>
+                <option value="JP" data-dial="81">+81 Japan</option>
+              </select>
+              <input id="f-wa" name="whatsapp" class="inp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="98765 43210" aria-describedby="wa-hint">
+            </div>
+            <span id="wa-hint" class="sr-only">Pick your country, then type your number. You can also type a full number starting with plus.</span>
+          </div>
+        </div>
+        <label class="check" hidden data-consent-row>
+          <input type="checkbox" name="wa_consent" checked>
+          <span>Yes, send me launch updates on WhatsApp. I can stop them any time.</span>
+        </label>
+        <div>
+          <label class="lbl" for="f-lang">Which language will you learn in?</label>
+          <select id="f-lang" name="language" class="inp" data-lang-select>
+            <option value="en">English · English</option>
+            <option value="hi">हिन्दी · Hindi</option>
+            <option value="te">తెలుగు · Telugu</option>
+            <option value="ta">தமிழ் · Tamil</option>
+            <option value="kn">ಕನ್ನಡ · Kannada</option>
+            <option value="mr">मराठी · Marathi</option>
+            <option value="bn">বাংলা · Bengali</option>
+            <option value="gu">ગુજરાતી · Gujarati</option>
+          </select>
+        </div>
+        <fieldset>
+          <legend class="lbl">Who is it for? <small>(pick any)</small></legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="who" value="me"><span>Me</span></label>
+            <label class="chip"><input type="checkbox" name="who" value="child"><span>My child</span></label>
+            <label class="chip"><input type="checkbox" name="who" value="parents"><span>My parents</span></label>
+            <label class="chip"><input type="checkbox" name="who" value="family" checked><span>The whole family</span></label>
+          </div>
+        </fieldset>
+        <div class="hp" aria-hidden="true">
+          <label for="f-website">Leave this empty</label>
+          <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <p class="alert" role="alert" hidden data-error></p>
+        <button class="btn btn--block" type="submit" data-submit>Join the waitlist</button>
+        <p class="fineprint">We only use your details to tell you about the launch. No spam. <a href="privacy.html">Privacy</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- faq -->
+<section id="faq" class="sec">
+  <div class="wrap stack" style="max-width:860px;gap:18px">
+    <h2 class="h2">Questions families ask</h2>
+    <div class="faq">
+      <details name="faq" open><summary>Is it free?<span class="plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B2A1F" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Chapter 1 is free for everyone. <span data-tpl="After that, Gita Saransh is {price} a month with a {trial_length} free trial.">After that, a small subscription unlocks all 18 chapters, with a free trial to start.</span> <span data-tpl="Founding members get {founding_perk}.">Founding members get a special launch gift.</span></p></details>
+      <details name="faq"><summary>Which languages can I learn in?<span class="plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B2A1F" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>English, Hindi, Telugu, Tamil, Kannada, Marathi, Bengali and Gujarati. Shlokas are always in Sanskrit; the meanings, stories and Krishna’s answers are in your language.</p></details>
+      <details name="faq"><summary>Do I need to know Sanskrit?<span class="plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B2A1F" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Not at all. You listen first while each word lights up, then say it back. The meaning comes right after, in your language.</p></details>
+      <details name="faq"><summary>Who is it for?<span class="plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B2A1F" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Children learning with a parent, adults starting the Gita for the first time, and grandparents who want to recite it daily. Everyone in a family can have their own Krishna.</p></details>
+      <details name="faq"><summary>When does it launch?<span class="plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B2A1F" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p><span data-tpl="We’re aiming for {launch_month} on iPhone and Android.">We’re launching soon on iPhone and Android.</span> Founding members hear first.</p></details>
+      <details name="faq"><summary>Is Ask Krishna safe for kids?<span class="plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B2A1F" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Answers are gentle, family friendly and always tied to a real verse. If a question sounds like someone needs real help, the app steps out of character and points them to a trusted adult or helpline.</p></details>
+      <details name="faq"><summary>What do you do with my email and number?<span class="plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B2A1F" stroke-width="3.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Only tell you about the launch and your founding perk. You can unsubscribe with one tap. We never sell or share your details. <a href="privacy.html">Read the privacy notice</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="wrap stack foot">
+    <a class="brand" href="#top" style="flex-grow:0">
+      <svg width="34" height="22" viewBox="0 0 200 120" aria-hidden="true"><path d="M100 100 C70 92 40 72 30 46 C60 46 88 66 100 100 Z" fill="#F9B8CB"/><path d="M100 100 C130 92 160 72 170 46 C140 46 112 66 100 100 Z" fill="#F9B8CB"/><path d="M100 104 C84 82 84 42 100 20 C116 42 116 82 100 104 Z" fill="#F48BAA"/></svg>
+      <span>Gita Saransh</span>
+    </a>
+    <p class="sa" lang="sa">सर्वे भवन्तु सुखिनः</p>
+    <div class="foot-links">
+      <a href="#join">Join the waitlist</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="#join" data-tpl-href="mailto:{contact_email}" data-needs="contact_email" hidden>Contact</a>
+    </div>
+    <small><span data-tpl="Made with devotion in {city}.">Made with devotion.</span> © <span data-year>2026</span> Gita Saransh.</small>
+  </div>
+</footer>
+</body>
+</html>

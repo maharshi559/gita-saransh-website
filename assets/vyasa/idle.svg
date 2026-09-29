@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220"><title>Vyasa</title><style>@keyframes b{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes br{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,.985)}}@keyframes bl{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}@keyframes tw{0%,100%{opacity:.25;transform:scale(.6) rotate(0deg)}50%{opacity:1;transform:scale(1) rotate(20deg)}}@keyframes wv{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-16deg)}}@keyframes rk{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}@keyframes sw{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}@keyframes nt{0%{opacity:0;transform:translate(0,6px)}30%{opacity:1}100%{opacity:0;transform:translate(8px,-18px)}}@keyframes fl{0%,100%{transform:scale(1,1) rotate(0deg)}30%{transform:scale(.94,1.06) rotate(-3deg)}60%{transform:scale(1.04,.95) rotate(2deg)}}.a-bob{animation:b 3.4s ease-in-out infinite}.a-breathe{animation:br 4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-blink{animation:bl 4.2s infinite;transform-box:fill-box;transform-origin:center}.a-twinkle{animation:tw 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.a-wave{animation:wv 1s ease-in-out infinite}.a-rock{animation:rk 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-sway{animation:sw 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-note{animation:nt 1.8s ease-out infinite}.a-flicker{animation:fl .9s ease-in-out infinite}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<ellipse cx="100" cy="210" rx="80" ry="8" fill="#3B2A1F" opacity="0.08"></ellipse>
+<ellipse cx="100" cy="200" rx="86" ry="14" fill="#E9C77F" stroke="#C9A55A" style="stroke-width: 2.5px"></ellipse>
+<g class="a-breathe">
+<path d="M30 200 C34 150 60 130 100 130 C140 130 166 150 170 200 Z" fill="#F29A3B" stroke="#C06A1C" style="stroke-width: 3px"></path>
+<path d="M60 142 C78 160 88 186 84 200 L62 200 C58 180 56 160 60 142 Z" fill="#E07A1F"></path>
+<path d="M24 202 C40 184 80 182 100 190 C120 182 160 184 176 202 Z" fill="#EC8E30" stroke="#C06A1C" style="stroke-width: 3px"></path>
+<rect x="64" y="172" width="72" height="17" rx="5" fill="#EFD096" stroke="#A9803E" style="stroke-width: 2.5px"></rect>
+<line x1="70" y1="178" x2="130" y2="178" stroke="#C49B55" style="stroke-width: 1.6px"></line>
+<line x1="70" y1="183.5" x2="130" y2="183.5" stroke="#C49B55" style="stroke-width: 1.6px"></line>
+<rect x="96" y="169" width="8" height="23" rx="2" fill="#B5462E"></rect>
+<circle cx="66" cy="180" r="9" fill="#9A6444" stroke="#5E3A24" style="stroke-width: 2.5px"></circle>
+<circle cx="134" cy="180" r="9" fill="#9A6444" stroke="#5E3A24" style="stroke-width: 2.5px"></circle>
+</g>
+<g class="a-bob">
+<path d="M54 88 C50 120 60 140 72 148 L128 148 C140 140 150 120 146 88 Z" fill="#DAD3C8" stroke="#A89F90" style="stroke-width: 2.5px"></path>
+<circle cx="55" cy="94" r="9" fill="#9A6444" stroke="#5E3A24" style="stroke-width: 2.5px"></circle>
+<circle cx="145" cy="94" r="9" fill="#9A6444" stroke="#5E3A24" style="stroke-width: 2.5px"></circle>
+<circle cx="100" cy="90" r="46" fill="#9A6444" stroke="#5E3A24" style="stroke-width: 3px"></circle>
+<ellipse cx="100" cy="40" rx="22" ry="17" fill="#E4DED4" stroke="#A89F90" style="stroke-width: 3px"></ellipse>
+<path d="M56 82 C60 54 80 46 100 46 C120 46 140 54 144 82 C130 68 116 64 100 64 C84 64 70 68 56 82 Z" fill="#E4DED4" stroke="#A89F90" style="stroke-width: 3px"></path>
+<rect x="84" y="52" width="32" height="7" rx="3.5" fill="#7A3E22"></rect>
+<line x1="85" y1="72" x2="115" y2="72" stroke="#FFF7EA" style="stroke-width: 2.4px; stroke-linecap: round"></line>
+<line x1="83" y1="77" x2="117" y2="77" stroke="#FFF7EA" style="stroke-width: 2.4px; stroke-linecap: round"></line>
+<line x1="85" y1="82" x2="115" y2="82" stroke="#FFF7EA" style="stroke-width: 2.4px; stroke-linecap: round"></line>
+<circle cx="100" cy="77" r="3.2" fill="#D2402E"></circle>
+<path d="M71 91 Q80 84 91 89" stroke="#F4EFE6" fill="none" style="stroke-width: 5px; stroke-linecap: round"></path>
+<path d="M109 89 Q120 84 129 91" stroke="#F4EFE6" fill="none" style="stroke-width: 5px; stroke-linecap: round"></path>
+<g class="a-blink">
+<ellipse cx="82" cy="100" rx="5" ry="6.5" fill="#241610"></ellipse>
+<ellipse cx="118" cy="100" rx="5" ry="6.5" fill="#241610"></ellipse>
+</g>
+<circle cx="84" cy="98" r="1.8" fill="#FFFFFF"></circle>
+<circle cx="120" cy="98" r="1.8" fill="#FFFFFF"></circle>
+<ellipse cx="72" cy="112" rx="7" ry="4" fill="#D9826A" opacity="0.6"></ellipse>
+<ellipse cx="128" cy="112" rx="7" ry="4" fill="#D9826A" opacity="0.6"></ellipse>
+<path d="M97 102 Q100 108 104 104" stroke="#5E3A24" fill="none" style="stroke-width: 2.5px; stroke-linecap: round"></path>
+<path d="M58 106 C56 142 72 178 100 188 C128 178 144 142 142 106 C132 120 118 126 100 126 C82 126 68 120 58 106 Z" fill="#F8F4EC" stroke="#D6CCBB" style="stroke-width: 3px"></path>
+<path d="M82 140 Q86 156 80 168" stroke="#E2D9C9" fill="none" style="stroke-width: 2px; stroke-linecap: round"></path>
+<path d="M118 140 Q114 156 120 168" stroke="#E2D9C9" fill="none" style="stroke-width: 2px; stroke-linecap: round"></path>
+<path d="M100 146 L100 176" stroke="#E2D9C9" fill="none" style="stroke-width: 2px; stroke-linecap: round"></path>
+<path d="M92 122 Q100 128 108 122" stroke="#5E3A24" fill="none" style="stroke-width: 2.5px; stroke-linecap: round"></path>
+<path d="M100 112 C92 106 80 108 73 116 C84 114 92 116 100 119 C108 116 116 114 127 116 C120 108 108 106 100 112 Z" fill="#FFFFFF" stroke="#D6CCBB" style="stroke-width: 2.5px"></path>
+<circle cx="74" cy="144" r="3.6" fill="#7A3E22"></circle>
+<circle cx="82" cy="151" r="3.6" fill="#7A3E22"></circle>
+<circle cx="91" cy="155" r="3.6" fill="#7A3E22"></circle>
+<circle cx="100" cy="157" r="3.6" fill="#7A3E22"></circle>
+<circle cx="109" cy="155" r="3.6" fill="#7A3E22"></circle>
+<circle cx="118" cy="151" r="3.6" fill="#7A3E22"></circle>
+<circle cx="126" cy="144" r="3.6" fill="#7A3E22"></circle>
+</g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><title>calf</title><style>@keyframes b{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes br{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,.985)}}@keyframes bl{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}@keyframes tw{0%,100%{opacity:.25;transform:scale(.6) rotate(0deg)}50%{opacity:1;transform:scale(1) rotate(20deg)}}@keyframes wv{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-16deg)}}@keyframes rk{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}@keyframes sw{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}@keyframes nt{0%{opacity:0;transform:translate(0,6px)}30%{opacity:1}100%{opacity:0;transform:translate(8px,-18px)}}@keyframes fl{0%,100%{transform:scale(1,1) rotate(0deg)}30%{transform:scale(.94,1.06) rotate(-3deg)}60%{transform:scale(1.04,.95) rotate(2deg)}}.a-bob{animation:b 3.4s ease-in-out infinite}.a-breathe{animation:br 4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-blink{animation:bl 4.2s infinite;transform-box:fill-box;transform-origin:center}.a-twinkle{animation:tw 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.a-wave{animation:wv 1s ease-in-out infinite}.a-rock{animation:rk 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-sway{animation:sw 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-note{animation:nt 1.8s ease-out infinite}.a-flicker{animation:fl .9s ease-in-out infinite}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<g transform="translate(2 14) scale(1.26)">
+<ellipse cx="40" cy="44" rx="28" ry="13" fill="#FFF8EC" stroke="#D9C7A8" style="stroke-width: 2.5px"></ellipse>
+<ellipse cx="50" cy="42" rx="6" ry="4" fill="#C9A27A"></ellipse>
+<path d="M60 44 C68 42 70 36 68 32" stroke="#D9C7A8" fill="none" style="stroke-width: 2.5px; stroke-linecap: round"></path>
+<ellipse cx="14" cy="18" rx="7" ry="4" fill="#F4C9C0" stroke="#D9C7A8" style="stroke-width: 2px"></ellipse>
+<ellipse cx="34" cy="18" rx="7" ry="4" fill="#F4C9C0" stroke="#D9C7A8" style="stroke-width: 2px"></ellipse>
+<circle cx="24" cy="28" r="13" fill="#FFF8EC" stroke="#D9C7A8" style="stroke-width: 2.5px"></circle>
+<ellipse cx="24" cy="35" rx="8" ry="5" fill="#F4B8B0"></ellipse>
+<circle cx="19" cy="26" r="2.2" fill="#3B2A1F"></circle>
+<circle cx="29" cy="26" r="2.2" fill="#3B2A1F"></circle>
+</g>
+</svg>

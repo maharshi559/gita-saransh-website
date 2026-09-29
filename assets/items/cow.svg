@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><title>cow</title><style>@keyframes b{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes br{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,.985)}}@keyframes bl{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}@keyframes tw{0%,100%{opacity:.25;transform:scale(.6) rotate(0deg)}50%{opacity:1;transform:scale(1) rotate(20deg)}}@keyframes wv{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-16deg)}}@keyframes rk{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}@keyframes sw{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}@keyframes nt{0%{opacity:0;transform:translate(0,6px)}30%{opacity:1}100%{opacity:0;transform:translate(8px,-18px)}}@keyframes fl{0%,100%{transform:scale(1,1) rotate(0deg)}30%{transform:scale(.94,1.06) rotate(-3deg)}60%{transform:scale(1.04,.95) rotate(2deg)}}.a-bob{animation:b 3.4s ease-in-out infinite}.a-breathe{animation:br 4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-blink{animation:bl 4.2s infinite;transform-box:fill-box;transform-origin:center}.a-twinkle{animation:tw 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.a-wave{animation:wv 1s ease-in-out infinite}.a-rock{animation:rk 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-sway{animation:sw 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}.a-note{animation:nt 1.8s ease-out infinite}.a-flicker{animation:fl .9s ease-in-out infinite}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<rect x="34" y="66" width="8" height="24" rx="4" fill="#FFF8EC" stroke="#D9C7A8" style="stroke-width: 2.5px"></rect>
+<rect x="72" y="66" width="8" height="24" rx="4" fill="#FFF8EC" stroke="#D9C7A8" style="stroke-width: 2.5px"></rect>
+<path d="M88 56 C96 60 96 72 92 78" stroke="#D9C7A8" fill="none" style="stroke-width: 3px; stroke-linecap: round"></path>
+<ellipse cx="58" cy="58" rx="34" ry="18" fill="#FFF8EC" stroke="#D9C7A8" style="stroke-width: 3px"></ellipse>
+<ellipse cx="66" cy="54" rx="10" ry="7" fill="#B8865A"></ellipse>
+<ellipse cx="46" cy="64" rx="6" ry="4" fill="#B8865A"></ellipse>
+<path d="M10 26 C6 18 10 12 16 14 M34 26 C38 18 34 12 28 14" stroke="#C9A27A" fill="none" style="stroke-width: 3.5px; stroke-linecap: round"></path>
+<ellipse cx="10" cy="32" rx="7" ry="4" fill="#F4C9C0" stroke="#D9C7A8" style="stroke-width: 2px"></ellipse>
+<ellipse cx="34" cy="32" rx="7" ry="4" fill="#F4C9C0" stroke="#D9C7A8" style="stroke-width: 2px"></ellipse>
+<circle cx="22" cy="40" r="15" fill="#FFF8EC" stroke="#D9C7A8" style="stroke-width: 3px"></circle>
+<ellipse cx="22" cy="48" rx="9" ry="6" fill="#F4B8B0"></ellipse>
+<circle cx="17" cy="37" r="2.4" fill="#3B2A1F"></circle>
+<circle cx="27" cy="37" r="2.4" fill="#3B2A1F"></circle>
+<path d="M14 56 Q24 62 34 56" stroke="#E23D3D" fill="none" style="stroke-width: 3px"></path>
+<circle cx="24" cy="62" r="4" fill="#F2B705" stroke="#C98100" style="stroke-width: 1.5px"></circle>
+</svg>
