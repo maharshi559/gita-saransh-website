@@ -58,7 +58,9 @@
     return;
   }
   fetch(CFG.SUPABASE_URL.replace(/\/+$/, '') + '/rest/v1/site_settings?select=key,value', {
-    headers: { apikey: CFG.SUPABASE_ANON_KEY, Authorization: 'Bearer ' + CFG.SUPABASE_ANON_KEY }
+    headers: /^eyJ/.test(CFG.SUPABASE_ANON_KEY)
+      ? { apikey: CFG.SUPABASE_ANON_KEY, Authorization: 'Bearer ' + CFG.SUPABASE_ANON_KEY }
+      : { apikey: CFG.SUPABASE_ANON_KEY }
   }).then(function (res) {
     if (!res.ok) throw new Error('settings ' + res.status);
     return res.json();

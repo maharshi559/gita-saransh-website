@@ -214,6 +214,14 @@
     return S.site_url || CFG.SITE_URL || (location.protocol.indexOf('http') === 0 ? location.origin + location.pathname : '');
   }
 
+  // Works with both the new publishable key (sb_publishable_...) and the legacy anon key (eyJ...).
+  function supabaseHeaders(extra) {
+    var h = extra || {};
+    h.apikey = CFG.SUPABASE_ANON_KEY;
+    if (/^eyJ/.test(CFG.SUPABASE_ANON_KEY)) h.Authorization = 'Bearer ' + CFG.SUPABASE_ANON_KEY;
+    return h;
+  }
+
   function saveSignup(data) {
     if (!CFG.SUPABASE_URL || !CFG.SUPABASE_ANON_KEY) {
       console.warn('[Gita Saransh] Supabase is not configured in config.js. Sign-up not saved:', data);
@@ -221,11 +229,7 @@
     }
     return fetch(CFG.SUPABASE_URL.replace(/\/+$/, '') + '/rest/v1/rpc/join_waitlist', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        apikey: CFG.SUPABASE_ANON_KEY,
-        Authorization: 'Bearer ' + CFG.SUPABASE_ANON_KEY
-      },
+      headers: supabaseHeaders({ 'Content-Type': 'application/json' }),
       body: JSON.stringify(data)
     }).then(function (res) {
       if (!res.ok) return res.text().then(function (t) { throw new Error(t || res.status); });
