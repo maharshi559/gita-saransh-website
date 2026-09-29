@@ -12,10 +12,46 @@
 <meta property="og:description" content="Learn the Bhagavad Gita one shloka at a time, in your own language. Every chapter you finish, little Krishna grows.">
 <meta property="og:url" content="https://maharshi559.github.io/gita-saransh-website/">
 <meta property="og:image" content="https://maharshi559.github.io/gita-saransh-website/assets/og-image.png">
+<meta property="og:site_name" content="Gita Saransh">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Little blue Krishna waving from a pink lotus under a golden sun, next to the words Recite the Gita. Watch little Krishna grow up.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gita Saransh: recite the Gita, watch Krishna grow">
+<meta name="twitter:description" content="Learn the Bhagavad Gita one shloka at a time, in your own language. Every chapter you finish, little Krishna grows.">
+<meta name="twitter:image" content="https://maharshi559.github.io/gita-saransh-website/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://maharshi559.github.io/gita-saransh-website/#website",
+      "name": "Gita Saransh",
+      "url": "https://maharshi559.github.io/gita-saransh-website/",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Gita Saransh",
+      "description": "A playful Bhagavad Gita app for the whole family. Recite one shloka at a time in your own language and watch little Krishna grow up with every chapter.",
+      "url": "https://maharshi559.github.io/gita-saransh-website/",
+      "image": "https://maharshi559.github.io/gita-saransh-website/assets/og-image.png",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "EducationalApplication",
+      "inLanguage": ["en", "hi", "te", "ta", "kn", "mr", "bn", "gu", "sa"],
+      "audience": { "@type": "Audience", "audienceType": "Families, children with parents, adults and grandparents" },
+      "about": { "@type": "Book", "name": "Bhagavad Gita" }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@500;600;700;800&family=Tiro+Devanagari+Sanskrit&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@500;600;700;800&family=Tiro+Devanagari+Sanskrit&display=swap">
+<link rel="preload" as="image" href="assets/krishna/toddler-wave.svg" type="image/svg+xml" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 <script>document.documentElement.classList.add('js')</script>
 <script src="config.js" defer></script>
@@ -34,12 +70,13 @@
     </a>
     <nav class="nav" aria-label="Sections">
       <a class="navlink" href="#how">How it works</a>
+      <a class="navlink" href="#inside">The app</a>
       <a class="navlink" href="#ask">Ask Krishna</a>
       <a class="navlink" href="#courtyard">Courtyard</a>
       <a class="navlink" href="#faq">FAQ</a>
     </nav>
-    <label for="hdr-lang" class="sr-only">Your language</label>
-    <select id="hdr-lang" class="langsel" data-lang-select>
+    <label for="hdr-lang" class="langlbl"><span class="hide-s">Learn in</span><span class="sr-only"> (the language you’d like to learn the Gita in; this site is in English for now)</span></label>
+    <select id="hdr-lang" class="langsel" data-lang-select title="The language you’d like to learn in. This site is in English for now.">
       <option value="en">English</option>
       <option value="hi">हिन्दी</option>
       <option value="te">తెలుగు</option>
@@ -66,6 +103,7 @@
         <a class="btn" href="#join">Become a founding member</a>
         <a class="ghost" href="#how">See how it works</a>
       </div>
+      <p class="cta-note"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4E8F3E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><strong>Chapter 1 is free for everyone.</strong> <span data-tpl="Then {price} a month, with a {trial_length} free trial.">A small subscription unlocks all 18 chapters.</span></span></p>
       <div class="pills">
         <span class="pill">8 Indian languages</span>
         <span class="pill">18 chapters · 700 shlokas</span>
@@ -147,6 +185,67 @@
   </div>
 </section>
 
+<!-- inside the app -->
+<section id="inside" class="sec inside-sec">
+  <div class="wrap stack" style="gap:26px">
+    <div class="stack reveal" style="gap:10px;max-width:720px">
+      <span class="eyebrow">Inside the app</span>
+      <h2 class="h2">A peek at your five minutes a day.</h2>
+    </div>
+    <div class="phones">
+      <figure class="phone-fig reveal">
+        <div class="phone" role="img" aria-label="App screen, reciting Chapter 1, shloka 1. Vyasa says: listen first, then say it with me. The Sanskrit words light up one by one above a big microphone button.">
+          <div class="scr" aria-hidden="true">
+            <div class="scr-top"><span class="scr-x">✕</span><div class="scr-bar"><i style="width:9%"></i></div><span class="scr-chip">★ 120</span></div>
+            <div class="scr-seg"><span class="on">Listen</span><span>Recite</span><span>Understand</span></div>
+            <div class="scr-vyasa"><img src="assets/vyasa/idle.svg" width="70" height="77" alt=""><span class="scr-say">Listen first, then say it with me.</span></div>
+            <div class="scr-card sa" lang="sa"><span class="kw">धर्मक्षेत्रे</span> <span class="kw" style="animation-delay:.9s">कुरुक्षेत्रे</span> <span class="kw" style="animation-delay:1.8s">समवेता</span> <span class="kw" style="animation-delay:2.7s">युयुत्सवः</span> ।<br><span class="kw" style="animation-delay:3.6s">मामकाः</span> <span class="kw" style="animation-delay:4.5s">पाण्डवाश्चैव</span> <span class="kw" style="animation-delay:5.4s">किमकुर्वत</span> <span class="kw" style="animation-delay:6.3s">सञ्जय</span> ॥</div>
+            <p class="scr-iast">dharma-kṣetre kuru-kṣetre samavetā yuyutsavaḥ…</p>
+            <div class="scr-mic"><span class="scr-pulse a-pulse"></span><span class="scr-micbtn"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span></div>
+            <p class="scr-hint">Shloka 1 of 47</p>
+          </div>
+        </div>
+        <figcaption><strong>Recite</strong>Listen to Vyasa, then say it back. Every word lights up as it’s sung.</figcaption>
+      </figure>
+
+      <figure class="phone-fig reveal">
+        <div class="phone" role="img" aria-label="App screen, the Chapter 1 path. Three shlokas are done, the fourth is glowing as today’s shloka, and baby Krishna sits on his lotus beside the path. The top shows a 5 day streak and 120 XP.">
+          <div class="scr scr--path" aria-hidden="true">
+            <div class="scr-top"><span class="scr-chip scr-chip--fire"><svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-4-1-6 1-9z" fill="#F2762E"/></svg>5</span><span class="scr-title">Chapter 1</span><span class="scr-chip">★ 120</span></div>
+            <div class="scr-unit"><strong>Arjuna’s sorrow</strong><span>47 shlokas · 3 done</span></div>
+            <div class="path">
+              <span class="node done" style="margin-left:0">✓</span>
+              <span class="node done" style="margin-left:46px">✓</span>
+              <span class="node done" style="margin-left:70px">✓</span>
+              <span class="node now a-bob" style="margin-left:40px">1.4</span>
+              <span class="node" style="margin-left:-6px">1.5</span>
+              <span class="node" style="margin-left:34px">1.6</span>
+              <img class="path-k" src="assets/krishna/newborn.svg" width="84" height="92" alt="">
+            </div>
+            <nav class="scr-tabs" aria-hidden="true"><span class="on"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg>Learn</span><span class=""><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 5-7 8-7s7 2 8 7"/></svg>Journey</span><span><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Ask</span><span><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-6 7 6v11"/></svg>Courtyard</span></nav>
+          </div>
+        </div>
+        <figcaption><strong>Your path</strong>One small step a day through all 18 chapters, with a streak to keep you going.</figcaption>
+      </figure>
+
+      <figure class="phone-fig reveal">
+        <div class="phone phone--video" role="img" aria-label="App screen, the growth moment after finishing Chapter 1: baby Krishna glows and grows into toddler Krishna, with petals falling.">
+          <div class="scr scr--video" aria-hidden="true">
+            <video data-grow-video poster="assets/app/growth-1-poster.jpg" muted loop playsinline preload="none" width="232" height="502"><source src="assets/app/growth-1.webm" type="video/webm"><source src="assets/app/growth-1.mp4" type="video/mp4"></video>
+            <div class="grow-text" data-grow-text>
+              <span class="grow-h">Krishna is growing up!</span>
+              <span class="grow-s">Bal Krishna · Chapters 2–5</span>
+              <span class="grow-btn">Start Chapter 2</span>
+            </div>
+          </div>
+        </div>
+        <figcaption><strong>Grow together</strong>Finish a chapter and watch Krishna grow up, with a little celebration each time.</figcaption>
+      </figure>
+    </div>
+    <p class="preview-note">App preview from our designs. Screens may change a little before launch.</p>
+  </div>
+</section>
+
 <!-- ask krishna -->
 <section id="ask" class="sec" style="background:#fff">
   <div class="wrap split">
@@ -161,7 +260,8 @@
       <span class="hint">Try it: tap an age to hear the same question answered differently.</span>
     </div>
     <div class="chat reveal">
-      <div class="agetabs" role="group" aria-label="Krishna’s age" data-ask-tabs>
+      <span class="lbl-sm" id="age-lbl">Pick Krishna’s age</span>
+      <div class="agetabs" role="group" aria-labelledby="age-lbl" data-ask-tabs>
         <button class="tab" type="button" aria-pressed="false" data-age="newborn">Shishu</button>
         <button class="tab" type="button" aria-pressed="true" data-age="toddler">Bal</button>
         <button class="tab" type="button" aria-pressed="false" data-age="boy">Gopal</button>
@@ -169,10 +269,12 @@
         <button class="tab" type="button" aria-pressed="false" data-age="youth">Yuva</button>
         <button class="tab" type="button" aria-pressed="false" data-age="adult">Parthasarathi</button>
       </div>
+      <p class="stage" data-ask-stage><img src="assets/krishna/toddler.svg" width="28" height="31" alt="" data-ask-stage-img><span><strong data-ask-stage-name>Bal Krishna</strong> · <span data-ask-stage-span>Chapters 2–5</span> · <em data-ask-stage-tone>playful and giggly</em></span></p>
       <div class="q-bubble">I’m scared about my exams</div>
       <div class="a-row">
         <div class="avatar"><img src="assets/krishna/toddler.svg" width="46" height="51" alt="" data-ask-avatar></div>
-        <div class="a-bubble" aria-live="polite" data-ask-bubble>
+        <div class="a-bubble" aria-live="polite" aria-atomic="true" data-ask-bubble>
+          <span class="sr-only" data-ask-sr>Bal Krishna, chapters 2 to 5, answers:</span>
           <div class="gesture" data-ask-gesture>(giggles and hides a butter pot)</div>
           <span data-ask-reply>Exams are scary? Like when Yashoda Maa finds my butter pot! Hee hee. But listen: one step, then one step. Study a little bit every day. The marks? Leave them to me. Your job is the trying!</span>
         </div>
@@ -182,6 +284,7 @@
         <div class="sa" lang="sa">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।<br>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥</div>
         <div class="verse-en">Your right is to your work alone, never to its results.</div>
       </div>
+      <p class="disclaimer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.01"/></svg><span>Sample answer. In the app, Ask Krishna is AI-assisted guidance based on Gita verses. It is not medical, legal or crisis advice, and if someone sounds like they need real help, it points them to a trusted adult or helpline.</span></p>
     </div>
   </div>
 </section>
@@ -240,7 +343,7 @@
           <img class="a-bob" src="assets/krishna/toddler-wave.svg" width="130" height="143" alt="">
           <img src="assets/vyasa/bless.svg" width="120" height="132" alt="">
         </div>
-        <span class="joined-title" data-joined-title>You’re a founding member!</span>
+        <h3 class="joined-title" tabindex="-1" data-joined-title>You’re a founding member!</h3>
         <p>Vyasa has written your name down. We’ll write to <b data-shown-email>you</b> when Gita Saransh launches<span data-shown-wa hidden> and send a WhatsApp message to <span data-shown-wa-num></span></span>.</p>
         <a class="btn btn--green" href="#" target="_blank" rel="noopener" data-share>Share with family on WhatsApp</a>
         <button class="ghost" type="button" data-edit>Change my details</button>

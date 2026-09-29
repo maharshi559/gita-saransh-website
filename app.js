@@ -77,6 +77,15 @@
   var gesture = $('[data-ask-gesture]');
   var reply = $('[data-ask-reply]');
   var avatar = $('[data-ask-avatar]');
+  var STAGE = {
+    newborn: ['Shishu Krishna', 'Chapter 1', 'a tiny baby, all coos', 'chapter 1'],
+    toddler: ['Bal Krishna', 'Chapters 2–5', 'playful and giggly', 'chapters 2 to 5'],
+    boy: ['Gopal Krishna', 'Chapters 6–9', 'a cheerful cowherd boy', 'chapters 6 to 9'],
+    teen: ['Kishore Krishna', 'Chapters 10–12', 'a brave, caring friend', 'chapters 10 to 12'],
+    youth: ['Yuva Krishna', 'Chapters 13–15', 'a calm young prince', 'chapters 13 to 15'],
+    adult: ['Parthasarathi', 'Chapters 16–18', 'Arjuna’s teacher', 'chapters 16 to 18']
+  };
+  var stageEl = $('[data-ask-stage]');
 
   function pickAge(age) {
     var a = ASK[age];
@@ -86,6 +95,15 @@
     gesture.hidden = !a[0];
     reply.textContent = a[1];
     avatar.src = 'assets/krishna/' + age + '.svg';
+    var st = STAGE[age];
+    $('[data-ask-stage-img]').src = 'assets/krishna/' + age + '.svg';
+    $('[data-ask-stage-name]').textContent = st[0];
+    $('[data-ask-stage-span]').textContent = st[1];
+    $('[data-ask-stage-tone]').textContent = st[2];
+    $('[data-ask-sr]').textContent = st[0] + ', ' + st[3] + ', answers:';
+    stageEl.classList.remove('flash');
+    void stageEl.offsetWidth;
+    stageEl.classList.add('flash');
     bubble.classList.remove('a-fade');
     void bubble.offsetWidth; // restart the fade
     bubble.classList.add('a-fade');
@@ -242,6 +260,7 @@
     };
 
     submitBtn.disabled = true;
+    submitBtn.setAttribute('aria-busy', 'true');
     submitBtn.textContent = 'Joining…';
     saveSignup(payload).then(function (r) {
       $('[data-shown-email]').textContent = email;
@@ -252,7 +271,7 @@
       $('[data-share]').href = 'https://wa.me/?text=' + encodeURIComponent(msg.trim());
       form.hidden = true;
       joined.hidden = false;
-      joined.focus({ preventScroll: true });
+      $('[data-joined-title]').focus({ preventScroll: true });
       joined.scrollIntoView({ behavior: 'smooth', block: 'center' });
       store('gs-joined', '1');
     }).catch(function (err) {
@@ -260,6 +279,7 @@
       showError('Something went wrong on our side. Please try again in a minute.');
     }).then(function () {
       submitBtn.disabled = false;
+      submitBtn.removeAttribute('aria-busy');
       submitBtn.textContent = 'Join the waitlist';
     });
   });
@@ -269,6 +289,29 @@
     form.hidden = false;
     emailIn.focus();
   });
+
+  /* ---------- app preview: growth video ---------- */
+  var vid = $('[data-grow-video]');
+  var growText = $('[data-grow-text]');
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (vid) {
+    if (reduceMotion) {
+      vid.removeAttribute('loop');
+      growText.classList.add('on');
+    } else if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { var p = vid.play(); if (p && p.catch) p.catch(function () { growText.classList.add('on'); }); }
+          else vid.pause();
+        });
+      }, { threshold: 0.4 }).observe(vid);
+      vid.addEventListener('timeupdate', function () {
+        growText.classList.toggle('on', vid.currentTime > 3.3);
+      });
+    } else {
+      growText.classList.add('on');
+    }
+  }
 
   var y = $('[data-year]');
   if (y) y.textContent = String(new Date().getFullYear());

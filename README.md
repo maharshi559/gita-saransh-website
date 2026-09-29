@@ -13,6 +13,7 @@ assets/krishna/     Krishna in 6 ages (animated SVG, from the canvas)
 assets/vyasa/       Vyasa idle / blessing
 assets/items/       15 courtyard offerings
 assets/og-image.png link preview image (1200x630)
+assets/app/          growth video + poster for the "Inside the app" phone previews (from the app's animations)
 supabase/waitlist.sql       sign-up table + join_waitlist() function
 supabase/site_settings.sql  editable site text (launch month, price, perk...)
 tools/build_svgs.py    regenerates the SVGs from the canvas .dc.html files
@@ -71,6 +72,13 @@ This repository is public and served by GitHub Pages at **https://maharshi559.gi
 - Custom domain later: Settings > Pages > Custom domain, then update `og:url` and `og:image` in `index.html` to the new address.
 
 Nothing here is secret: the Supabase anon key in `config.js` is meant to be public (it can only read `site_settings` and call `join_waitlist()`).
+
+## Page notes
+
+- **Inside the app** section: three phone previews built in HTML/CSS (Recite, Chapter path, growth moment). The growth phone plays `assets/app/growth-1.webm` (mp4 fallback) only while visible, and shows a still for people who prefer reduced motion. When real app screenshots exist, you can swap a phone's screen for an `<img>`.
+- **Language picker** in the header says "Learn in": it sets the greeting and the form's language. The site text itself is English for now.
+- **Footer Contact link** appears once `contact_email` is set in `site_settings` (it stays hidden rather than pointing nowhere).
+- **SEO**: `index.html` has Open Graph / Twitter tags with absolute URLs and a schema.org `MobileApplication` block. Update the URLs there if you move to a custom domain.
 
 ## Notes
 
