@@ -11,6 +11,39 @@
   'use strict';
 
   var CFG = window.GITA_SARANSH || {};
+
+  /* ---------- visitor's country (from the device time zone; no tracking, no IP lookup) ---------- */
+  var COUNTRY = (function () {
+    var tz = '';
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) { /* ignore */ }
+    var TZ = {
+      'Asia/Kolkata': 'IN', 'Asia/Calcutta': 'IN', 'Europe/London': 'GB', 'Asia/Dubai': 'AE', 'Asia/Riyadh': 'SA',
+      'Asia/Qatar': 'QA', 'Asia/Kuwait': 'KW', 'Asia/Muscat': 'OM', 'Asia/Bahrain': 'BH', 'Asia/Singapore': 'SG',
+      'Asia/Kuala_Lumpur': 'MY', 'Asia/Kathmandu': 'NP', 'Asia/Katmandu': 'NP', 'Asia/Colombo': 'LK', 'Asia/Dhaka': 'BD',
+      'Indian/Mauritius': 'MU', 'Pacific/Fiji': 'FJ', 'Africa/Johannesburg': 'ZA', 'Africa/Nairobi': 'KE',
+      'America/Port_of_Spain': 'TT', 'America/Guyana': 'GY', 'America/Paramaribo': 'SR', 'Europe/Berlin': 'DE',
+      'Europe/Amsterdam': 'NL', 'Europe/Dublin': 'IE', 'Europe/Paris': 'FR', 'Europe/Rome': 'IT',
+      'Asia/Hong_Kong': 'HK', 'Asia/Tokyo': 'JP', 'Pacific/Auckland': 'NZ'
+    };
+    var CA = /^America\/(Toronto|Vancouver|Edmonton|Winnipeg|Halifax|Regina|St_Johns|Montreal|Moncton)/;
+    return TZ[tz] || (CA.test(tz) ? 'CA' : /^America\//.test(tz) ? 'US' : /^Australia\//.test(tz) ? 'AU' : '');
+  })();
+  window.GS_COUNTRY = COUNTRY; // '' when unknown
+
+  /* ---------- price for this visitor ----------
+     price        India price, e.g. "₹99" (shown in India)
+     price_intl   price for everyone outside India, e.g. "$4.99"
+     prices       optional per-country overrides as JSON, e.g. {"GB":"£3.99","AE":"AED 19"}
+     Outside India with no matching price, the price sentence shows neutral wording instead. */
+  function localPrice(settings) {
+    var byCountry = {};
+    if (has(settings, 'prices')) {
+      try { byCountry = JSON.parse(settings.prices) || {}; } catch (e) { byCountry = {}; }
+    }
+    if (COUNTRY && byCountry[COUNTRY]) return byCountry[COUNTRY];
+    if (COUNTRY === 'IN') return settings.price;
+    return has(settings, 'price_intl') ? settings.price_intl : null;
+  }
   var CACHE_KEY = 'gs-settings';
   var TOKEN = /\{(\w+)\}/g;
 
@@ -27,7 +60,10 @@
     return ok ? out : null;
   }
 
-  function apply(settings) {
+  function apply(raw) {
+    var settings = {};
+    Object.keys(raw || {}).forEach(function (k) { settings[k] = raw[k]; });
+    settings.price = localPrice(raw || {});
     window.GITA_SARANSH_SETTINGS = settings;
     document.querySelectorAll('[data-tpl]').forEach(function (el) {
       if (!el.hasAttribute('data-fallback')) el.setAttribute('data-fallback', el.textContent);

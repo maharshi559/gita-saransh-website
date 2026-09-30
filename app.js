@@ -153,7 +153,7 @@
       'Asia/Hong_Kong': 'HK', 'Asia/Tokyo': 'JP', 'Pacific/Auckland': 'NZ'
     };
     var CA = /^America\/(Toronto|Vancouver|Edmonton|Winnipeg|Halifax|Regina|St_Johns|Montreal|Moncton)/;
-    var iso = TZ[tz] || (CA.test(tz) ? 'CA' : /^America\//.test(tz) ? 'US' : /^Australia\//.test(tz) ? 'AU' : 'IN');
+    var iso = window.GS_COUNTRY || TZ[tz] || (CA.test(tz) ? 'CA' : /^America\//.test(tz) ? 'US' : /^Australia\//.test(tz) ? 'AU' : 'IN');
     ccSel.value = iso;
     updatePlaceholder();
   })();
@@ -315,6 +315,15 @@
     } else {
       growText.classList.add('on');
     }
+  }
+
+  var shareFoot = $('[data-share-footer]');
+  if (shareFoot) {
+    var setShare = function () {
+      shareFoot.href = 'https://wa.me/?text=' + encodeURIComponent(('Recite the Gita and watch little Krishna grow up! Join the Gita Saransh waitlist: ' + siteLink()).trim());
+    };
+    setShare();
+    document.addEventListener('gs:settings', setShare);
   }
 
   var y = $('[data-year]');

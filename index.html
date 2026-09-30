@@ -452,18 +452,51 @@
 
 <!-- footer -->
 <footer class="site-footer">
-  <div class="wrap stack foot">
-    <a class="brand" href="#top" style="flex-grow:0">
-      <svg width="34" height="22" viewBox="0 0 200 120" aria-hidden="true"><path d="M100 100 C70 92 40 72 30 46 C60 46 88 66 100 100 Z" fill="#F9B8CB"/><path d="M100 100 C130 92 160 72 170 46 C140 46 112 66 100 100 Z" fill="#F9B8CB"/><path d="M100 104 C84 82 84 42 100 20 C116 42 116 82 100 104 Z" fill="#F48BAA"/></svg>
-      <span>Gita Saransh</span>
-    </a>
-    <p class="sa" lang="sa">सर्वे भवन्तु सुखिनः</p>
-    <div class="foot-links">
-      <a href="#join">Join the waitlist</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="#join" data-tpl-href="mailto:{contact_email}" data-needs="contact_email" hidden>Contact</a>
+  <svg class="foot-edge" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H1200 V6 Q1175 24 1150 6 Q1125 24 1100 6 Q1075 24 1050 6 Q1025 24 1000 6 Q975 24 950 6 Q925 24 900 6 Q875 24 850 6 Q825 24 800 6 Q775 24 750 6 Q725 24 700 6 Q675 24 650 6 Q625 24 600 6 Q575 24 550 6 Q525 24 500 6 Q475 24 450 6 Q425 24 400 6 Q375 24 350 6 Q325 24 300 6 Q275 24 250 6 Q225 24 200 6 Q175 24 150 6 Q125 24 100 6 Q75 24 50 6 Q25 24 0 6 Z" fill="#FFF6E8"/></svg>
+  <div class="wrap foot">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a class="brand" href="#top"><svg width="34" height="22" viewBox="0 0 200 120" aria-hidden="true"><path d="M100 100 C70 92 40 72 30 46 C60 46 88 66 100 100 Z" fill="#F9B8CB"/><path d="M100 100 C130 92 160 72 170 46 C140 46 112 66 100 100 Z" fill="#F9B8CB"/><path d="M100 104 C84 82 84 42 100 20 C116 42 116 82 100 104 Z" fill="#F48BAA"/></svg><span>Gita Saransh</span></a>
+        <p class="foot-tag">Recite the Bhagavad Gita one shloka at a time, in your own language, and watch little Krishna grow up beside you.</p>
+        <figure class="foot-shloka">
+          <p class="sa" lang="sa">सर्वे भवन्तु सुखिनः</p>
+          <figcaption>May all beings be happy.</figcaption>
+        </figure>
+      </div>
+
+      <nav class="foot-col" aria-labelledby="fh-explore">
+        <h2 class="foot-h" id="fh-explore">Explore</h2>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#inside">Inside the app</a></li>
+          <li><a href="#ask">Ask Krishna</a></li>
+          <li><a href="#courtyard">Krishna’s courtyard</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="foot-col">
+        <h2 class="foot-h">Stay close</h2>
+        <ul>
+          <li><a href="#join">Join the waitlist</a></li>
+          <li><a href="https://wa.me/" target="_blank" rel="noopener" data-share-footer>Share on WhatsApp</a></li>
+          <li data-needs="contact_email" hidden><a href="#join" data-tpl-href="mailto:{contact_email}">Contact us</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-card">
+        <span class="foot-card-k">Launching <span data-tpl="{launch_month}">soon</span></span>
+        <p class="foot-card-t">Be there when Krishna is born on the lotus.</p>
+        <p class="foot-card-s" data-tpl="Founding families get {founding_perk}.">Founding families get a special launch gift.</p>
+        <a class="btn btn--sm" href="#join">Join the waitlist</a>
+      </div>
     </div>
-    <small><span data-tpl="Made with devotion in {city}.">Made with devotion.</span> © <span data-year>2026</span> Gita Saransh.</small>
+
+    <div class="foot-bottom">
+      <small>© <span data-year>2026</span> Gita Saransh. <span data-tpl="Made with devotion in {city}.">Made with devotion.</span></small>
+      <small>For families everywhere · 8 Indian languages · iPhone &amp; Android</small>
+    </div>
   </div>
 </footer>
 </body>
